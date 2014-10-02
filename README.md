@@ -47,10 +47,10 @@ lsof -Pi | grep LISTEN
 kill -9 18740
 ```
 
+--
 
 ## Leo Lanese, I Build Smart Solutions, London, UK<br>
 
-# MIT licence
 
 # My Portfolio<br>
 <a href="http://www.leolanese.com" target="_blank">http://www.leolanese.com</a><br>
