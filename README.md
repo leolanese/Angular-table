@@ -1,8 +1,6 @@
 ## Angular-table
-
-# What is this?
 This is a simple Responsive Web Boilerplate table using AngularJS.
-So you can kick-start your 'table' module with using AngularJS, RWD tables with Bootstrap CSS.
+You can kick-start your 'table' module with using AngularJS, RWD tables with Bootstrap CSS.
 
 # Update version: v1.1 02/10/2014
 I'm including:
@@ -52,6 +50,7 @@ kill -9 18740
 
 ## Leo Lanese, I Build Smart Solutions, London, UK<br>
 
+# MIT licence
 
 # My Portfolio<br>
 <a href="http://www.leolanese.com" target="_blank">http://www.leolanese.com</a><br>
