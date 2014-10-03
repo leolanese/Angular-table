@@ -49,7 +49,9 @@ kill -9 18740
 
 --
 
-## Leo Lanese, I Build Smart Solutions, London, UK<br>
+## { 'L e o   L a n e s e',
+### 'I  B u i l d   I n s p i r i n g   R e s p o n s i v e   S o l u t i o n s',
+### 'L O N D O N ,  U K' }
 
 
 # My Portfolio<br>

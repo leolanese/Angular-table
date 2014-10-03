@@ -1,0 +1,58 @@
+<!doctype html>
+<html ng-app="customersApp">
+
+<head>
+    <title>angular-table</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Mobile optimisation metas -->
+    <meta name="author" content="Leo Lanese" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body ng-controller="CustomersController">
+
+    <h2>Select a car:</h2>
+    <h2>Filter: <input type="text" ng-model="customerFilter.name" /></h2>
+
+    <table class="table table-bordered table-hover">
+        <thead>
+
+            <tr>
+                <th ng-click="doSort('branch')">branch</th>
+                <th ng-click="doSort('model')">model</th>
+                <th ng-click="doSort('price')">price</th>
+                <th ng-click="doSort('country')">country</th>
+            </tr>
+
+        </thead>
+        <tbody>
+
+            <tr ng-repeat="cust in customers | filter:customerFilter | orderBy:sortBy:reverse">
+                <td>{{ cust.branch }}</td>
+                <td>{{ cust.model }}</td>
+                <td>{{ cust.price | currency }}</td>
+                <td>{{ cust.country | date }}</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <h3>Total Cars: {{ customers.length }}</h3>
+
+    <script src="js/lib/angular.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/customersController.js"></script>
+
+</body>
+</html>
