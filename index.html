@@ -1,67 +1,152 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Angular-table : This is a simple Responsive Web Boilerplate table using AngularJS. So you can kick-start your &#39;table&#39; module with using AngularJS, RWD tables with Bootstrap CSS.">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Angular-table by sirwilliam</title>
+    <title>Angular-table</title>
   </head>
 
   <body>
 
-    <header>
-      <div class="container">
-        <h1>Angular-table</h1>
-        <h2>This is a simple Responsive Web Boilerplate table using AngularJS. So you can kick-start your &#39;table&#39; module with using AngularJS, RWD tables with Bootstrap CSS.</h2>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/sirwilliam/angular-table">View on GitHub</a>
 
-        <section id="downloads">
-          <a href="https://github.com/sirwilliam/angular-table/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/sirwilliam/angular-table/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/sirwilliam/angular-table" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+          <h1 id="project_title">Angular-table</h1>
+          <h2 id="project_tagline">This is a simple Responsive Web Boilerplate table using AngularJS. So you can kick-start your &#39;table&#39; module with using AngularJS, RWD tables with Bootstrap CSS.</h2>
 
-    <div class="container">
-      <section id="main_content">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/sirwilliam/angular-table/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/sirwilliam/angular-table/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a name="angular-table" class="anchor" href="#angular-table"><span class="octicon octicon-link"></span></a>Angular-table</h2>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p>This is a simple Responsive Web Boilerplate table using AngularJS.
+You can kick-start your 'table' module with using AngularJS, RWD tables with Bootstrap CSS.</p>
+
+<h1>
+<a name="update-version-v11-02102014" class="anchor" href="#update-version-v11-02102014"><span class="octicon octicon-link"></span></a>Update version: v1.1 02/10/2014</h1>
+
+<p>I'm including:</p>
+
+<ul>
+<li>filter and sort options now.</li>
+</ul><h1>
+<a name="what-im-using" class="anchor" href="#what-im-using"><span class="octicon octicon-link"></span></a>What I'm using:</h1>
+
+<p>Using AngularJS (1.2.0), RWD tables tricks from css-tricks.com, bootstrap CSS (3.2.0).</p>
+
+<h2>
+<a name="rwd-tables-css-tricks-article" class="anchor" href="#rwd-tables-css-tricks-article"><span class="octicon octicon-link"></span></a>RWD tables css-tricks article:</h2>
+
+<p><a href="http://css-tricks.com/responsive-data-tables/">css-tricks article</a></p>
+
+<h1>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h1>
+
+<p>To get you started you can simply clone the angular-table</p>
+
+<pre><code>mkdir angular-table
+git clone origin https://github.com/sirwilliam/angular-table.git
+cd angular-table
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<h1>
+<a name="install-the-node-http-server-server" class="anchor" href="#install-the-node-http-server-server"><span class="octicon octicon-link"></span></a>Install the node http-server server</h1>
+
+<pre><code>npm -g install http-server
+</code></pre>
+
+<p>Run this server 'ON THE PROJECT ROOT'</p>
+
+<pre><code>http-server
+</code></pre>
+
+<h1>
+<a name="get-the-process-that-has-bound-to-the-required-port" class="anchor" href="#get-the-process-that-has-bound-to-the-required-port"><span class="octicon octicon-link"></span></a>Get the process that has bound to the required port</h1>
+
+<pre><code>lsof -Pi | grep LISTEN
+</code></pre>
+
+<p>// node      18740  Leo   12u  IPv4 0xaf78c883a32c84bf      0t0  TCP *:8081 (LISTEN)</p>
+
+<h1>
+<a name="kill-process" class="anchor" href="#kill-process"><span class="octicon octicon-link"></span></a>kill process</h1>
+
+<pre><code>kill -9 18740
+</code></pre>
+
+<h2></h2>
+
+<h2>
+<a name="-l-e-o---l-a-n-e-s-e" class="anchor" href="#-l-e-o---l-a-n-e-s-e"><span class="octicon octicon-link"></span></a>{ 'L e o   L a n e s e',</h2>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<a name="i--b-u-i-l-d---i-n-s-p-i-r-i-n-g---r-e-s-p-o-n-s-i-v-e---s-o-l-u-t-i-o-n-s" class="anchor" href="#i--b-u-i-l-d---i-n-s-p-i-r-i-n-g---r-e-s-p-o-n-s-i-v-e---s-o-l-u-t-i-o-n-s"><span class="octicon octicon-link"></span></a>'I  B u i l d   I n s p i r i n g   R e s p o n s i v e   S o l u t i o n s',</h3>
 
 <h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<a name="l-o-n-d-o-n---u-k-" class="anchor" href="#l-o-n-d-o-n---u-k-"><span class="octicon octicon-link"></span></a>'L O N D O N ,  U K' }</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h1>
+<a name="my-portfolio" class="anchor" href="#my-portfolio"><span class="octicon octicon-link"></span></a>My Portfolio<br>
+</h1>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p><a href="http://www.leolanese.com" target="_blank"></a><a href="http://www.leolanese.com">http://www.leolanese.com</a><br></p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<h1>
+<a name="my-lab" class="anchor" href="#my-lab"><span class="octicon octicon-link"></span></a>My LAB<br>
+</h1>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<p><a href="http://www.rwdlab.com" target="_blank"></a><a href="http://www.rwdlab.com">http://www.rwdlab.com</a><br></p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<h1>
+<a name="my-activities" class="anchor" href="#my-activities"><span class="octicon octicon-link"></span></a>My Activities:<br>
+</h1>
+
+<p><a href="http://www.beresponsive.co.uk" target="_blank">www.beresponsive.co.uk</a><br></p>
+
+<h1>
+<a name="my-blog" class="anchor" href="#my-blog"><span class="octicon octicon-link"></span></a>My Blog:<br>
+</h1>
+
+<p><a href="http://www.leolanese.com/blog" target="_blank">www.leolanese.com/blog</a><br></p>
+
+<h1>
+<a name="twitter" class="anchor" href="#twitter"><span class="octicon octicon-link"></span></a>Twitter:<br>
+</h1>
+
+<p><a href="http://twitter.com/LeoLaneseltd" target="_blank"></a><a href="http://twitter.com/LeoLaneseltd">http://twitter.com/LeoLaneseltd</a><br></p>
+
+<h1>
+<a name="questions--suggestion--recommendation-" class="anchor" href="#questions--suggestion--recommendation-"><span class="octicon octicon-link"></span></a>Questions / Suggestion / Recommendation ?<br>
+</h1>
+
+<p><a href="mailto:javascript@leolanese.com">javascript@leolanese.com</a><br></p>
       </section>
     </div>
 
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Angular-table maintained by <a href="https://github.com/sirwilliam">sirwilliam</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
     
+
   </body>
 </html>
