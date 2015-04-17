@@ -12,8 +12,8 @@ I'm including:
 - filter and sort options now.
 
 # What I'm using:
-Using AngularJS (1.2.0), RWD tables tricks from css-tricks.com, bootstrap CSS (3.2.0).</br>
-Borrowed the idea from: <a href="https://github.com/kshoufer/angularjstable">angularjstable</a>
+-Using AngularJS (1.2.0), RWD tables tricks from css-tricks.com, bootstrap CSS (3.2.0).</br>
+-Borrowed the idea from: <a href="https://github.com/kshoufer/angularjstable">angularjstable</a>
 
 
 
