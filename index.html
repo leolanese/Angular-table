@@ -39,8 +39,8 @@
         <tbody>
 
             <tr ng-repeat="cust in customers | filter:customerFilter | orderBy:sortBy:reverse">
-                <td>{{ cust.branch }}</td>
-                <td>{{ cust.model }}</td>
+                <td>{{ cust.branch | uppercase }}</td>
+                <td>{{ cust.model | lowercase }}</td>
                 <td>{{ cust.price | currency : symbol : fractionSize}}</td>
                 <td>{{ cust.country | date }}</td>
             </tr>
