@@ -2,15 +2,15 @@
 This is a simple Responsive Web Boilerplate table using AngularJS.
 You can kick-start your 'table' module with using AngularJS, RWD tables with Bootstrap CSS.
 
+# DEMO:
+<a href="www.leolanese.com/angular-table/>angular-table DEMO</a>"
+
 # Update version: v1.2 17/04/2015
 - Refactor to follow Jhon's Papa best practices
-- Inlcuding LINK to DEMO
+- Including LINK to DEMO
 # Update version: v1.1 02/10/2014
 I'm including:
 - filter and sort options now.
-
-# DEMO:
-<a href="www.leolanese.com/angular-table/>angular-table DEMO</a>"
 
 # What I'm using:
 Using AngularJS (1.2.0), RWD tables tricks from css-tricks.com, bootstrap CSS (3.2.0).
