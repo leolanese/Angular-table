@@ -13,6 +13,9 @@ I'm including:
 
 # What I'm using:
 Using AngularJS (1.2.0), RWD tables tricks from css-tricks.com, bootstrap CSS (3.2.0).
+Borrowed the idea from: <a href="https://github.com/kshoufer/angularjstable">angularjstable</a>
+
+
 
 ## TODO: RWD tables css-tricks article:
 <a href="http://css-tricks.com/responsive-data-tables/">css-tricks article: Responsive data tables</a>
