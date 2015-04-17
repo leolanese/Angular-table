@@ -2,8 +2,7 @@
 This is a simple Responsive Web Boilerplate table using AngularJS.
 You can kick-start your 'table' module with using AngularJS, RWD tables with Bootstrap CSS.
 
-# DEMO:
-<a href="www.leolanese.com/angular-table/>angular-table DEMO</a>"
+
 
 # Update version: v1.2 17/04/2015
 - Refactor to follow Jhon's Papa best practices
@@ -14,6 +13,9 @@ I'm including:
 
 # What I'm using:
 Using AngularJS (1.2.0), RWD tables tricks from css-tricks.com, bootstrap CSS (3.2.0).
+
+## DEMO:
+<a href="http://www.leolanese.com/angular-table/">AJS table DEMO</a>
 
 ## RWD tables css-tricks article:
 <a href="http://css-tricks.com/responsive-data-tables/">css-tricks article</a>
