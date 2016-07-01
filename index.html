@@ -20,7 +20,7 @@
 
 </head>
 
-<body ng-controller="CustomersController">
+<body ng-controller="CustomersController as vm">
 
     <h2>Select a car:</h2>
     <h2>Filter: <input type="text" ng-model="customerFilter.name" /></h2>
@@ -29,16 +29,18 @@
         <thead>
 
             <tr>
-                <th ng-click="doSort('branch')">branch</th>
-                <th ng-click="doSort('model')">model</th>
-                <th ng-click="doSort('price')">price</th>
-                <th ng-click="doSort('country')">country</th>
+                <th ng-click="vm.doSort('branch')">branch</th>
+                <th ng-click="vm.doSort('model')">model</th>
+                <th ng-click="vm.doSort('price')">price</th>
+                <th ng-click="vm.doSort('country')">country</th>
             </tr>
 
         </thead>
         <tbody>
 
-            <tr ng-repeat="cust in customers | filter:customerFilter | orderBy:sortBy:reverse">
+        {{ vm.reverse }} - {{ vm.sortBy }}
+
+            <tr ng-repeat="cust in vm.customers | filter:customerFilter | orderBy:vm.sortBy:vm.reverse "><!-- orderBy:sortBy:reverse -->
                 <td>{{ cust.branch | uppercase }}</td>
                 <td>{{ cust.model | lowercase }}</td>
                 <td>{{ cust.price | currency : symbol : fractionSize}}</td>
@@ -48,7 +50,11 @@
         </tbody>
     </table>
 
-    <h3>Total Cars: {{ customers.length }}</h3>
+    <h3>Total Cars: {{ vm.customers.length }}</h3>
+
+   <!--
+       Testing proposes: {{ vm }}
+   -->
 
     <script src="js/lib/angular.js"></script>
     <script src="app/app.js"></script>
