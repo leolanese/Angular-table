@@ -24,7 +24,7 @@ To get you started you can simply clone the angular-table
 
 ```
 mkdir angular-table
-git clone origin https://github.com/sirwilliam/angular-table.git
+sudo git clone https://github.com/sirwilliam/angular-table.git
 cd angular-table
 ```
 
@@ -37,6 +37,11 @@ npm -g install http-server
 Run this server 'ON THE PROJECT ROOT'
 ```
 http-server
+```
+
+Open a browser and type (this could vary): 
+```
+http://172.16.32.63:8080
 ```
 
 # Get the process that has bound to the required port
