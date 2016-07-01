@@ -29,49 +29,49 @@
           country: 'Germany',
           branch: 'Audi',
           model: 'Avanti',
-          price: '90000'
+          price: '1'
         },
         {
           country: 'Italy',
           branch: 'Fiat',
           model: '600',
-          price: '12000'
+          price: '2'
         },
         {
           country: 'France',
           branch: 'Peugeout',
           model: '450',
-          price: '14000'
+          price: '3'
         },
         {
           country: 'Italy',
           branch: 'Ferrari',
           model: 'Testarossa',
-          price: '45000'
+          price: '4'
         },
         {
           country: 'Germany',
           branch: 'Mercedes',
           model: 'M3',
-          price: '67000'
+          price: '5'
         },
         {
           country: 'Germany',
           branch: 'Audi',
           model: 'A3',
-          price: '27000'
+          price: '6'
         },
         {
           country: 'India',
           branch: 'Terrafugia',
           model: 'TF-X',
-          price: '127000'
+          price: '7'
         },
         {
           country: 'England',
           branch: 'Volvo',
           model: 'X3',
-          price: '16000'
+          price: '8'
         }];
 
   }
