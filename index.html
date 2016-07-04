@@ -38,9 +38,10 @@
         </thead>
         <tbody>
 
+        {{ customerFilter.name }} <br>
         {{ vm.reverse }} - {{ vm.sortBy }}
 
-            <tr ng-repeat="cust in vm.customers | filter:customerFilter | orderBy:vm.sortBy:vm.reverse "><!-- orderBy:sortBy:reverse -->
+            <tr ng-repeat="cust in vm.customers | filter:customerFilter.name | orderBy:vm.sortBy:vm.reverse"><!-- orderBy:sortBy:reverse -->
                 <td>{{ cust.branch | uppercase }}</td>
                 <td>{{ cust.model | lowercase }}</td>
                 <td>{{ cust.price | currency : symbol : fractionSize}}</td>
