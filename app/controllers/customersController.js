@@ -12,6 +12,12 @@
 
   CustomersController.$inject = ['$scope'];
 
+  CustomersController.filter('customerFilter.name', function () {
+    return function (item) {
+      return item.toUpperCase();
+    };
+  });
+
   function CustomersController() {
 
       var vm = this;
