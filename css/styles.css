@@ -78,3 +78,20 @@ and (max-device-width : 480px) {
         width: 495px;
     }
 }
+.even{
+    background-color: #bbbbff;
+}
+.odd{
+    background-color: #72caff;
+}
+
+.in {
+    background: #3085ff;
+}
+.in:after {
+    content: '\f0d7';
+    font-family: icommon;
+    font-size: 1em;
+    float: right;
+}
+
