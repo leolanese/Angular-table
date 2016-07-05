@@ -4,12 +4,6 @@
   angular
     .module('customersApp')
 
-    .filter('customerFilter', function () {
-      return function(item) {
-        return item.toUpperCase();
-      };
-    })
-
     .controller('CustomersController', CustomersController);
 
     /* @ngInject */
