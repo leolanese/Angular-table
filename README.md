@@ -1,5 +1,5 @@
 ## Angular-table
-This is a simple Responsive Web Boilerplate table using AngularJS.
+This is a simple Responsive Web Boilerplate table using AngularJS and a JSON Object (hardcoded on the Controller).
 You can kick-start your 'table' module with using AngularJS, RWD tables with Bootstrap CSS.
 
 
