@@ -25,14 +25,16 @@
     <h2>Select a car:</h2>
     <h2>Filter: <input type="text" ng-model="customerFilter.name" /></h2>
 
-    <table class="table table-bordered table-hover">
+    <table class="table table-bordered table-hover" >
         <thead>
 
+        {{ vm.showCreateNewInterfacePanel }}
             <tr>
-                <th ng-click="vm.doSort('branch')">branch</th>
-                <th ng-click="vm.doSort('model')">model</th>
-                <th ng-click="vm.doSort('price')">price</th>
-                <th ng-click="vm.doSort('country')">country</th>
+                <th ng-click="vm.doSort($index); vm.caret('index')" ng-class="{ in:vm.indexClass } ">index</th>
+                <th ng-click="vm.doSort('branch'); vm.caret('branch')" ng-class="{ in:vm.branchClass }" >branch</th>
+                <th ng-click="vm.doSort('model'); vm.caret('model')" ng-class="{ in:vm.modelClass }">model</th>
+                <th ng-click="vm.doSort('price'); vm.caret('price')" ng-class="{ in:vm.priceClass }">price</th>
+                <th ng-click="vm.doSort('country'); vm.caret('country')" ng-class="{ in:vm.countryClass }">country</th>
             </tr>
 
         </thead>
@@ -41,7 +43,9 @@
         {{ customerFilter.name }} <br>
         {{ vm.reverse }} - {{ vm.sortBy }}
 
-            <tr ng-repeat="cust in vm.customers | filter:customerFilter.name | orderBy:vm.sortBy:vm.reverse"><!-- orderBy:sortBy:reverse -->
+            <tr ng-class="{even: !($index%2), odd: ($index%2)}"
+                ng-repeat="cust in vm.customers | filter:customerFilter.name | orderBy:vm.sortBy:vm.reverse"><!-- orderBy:sortBy:reverse -->
+                <td>{{ $index }} </td>
                 <td>{{ cust.branch | uppercase }}</td>
                 <td>{{ cust.model | lowercase }}</td>
                 <td>{{ cust.price | currency : symbol : fractionSize}}</td>
