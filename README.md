@@ -3,12 +3,18 @@ This is a simple Responsive Web Boilerplate table using AngularJS.
 You can kick-start your 'table' module with using AngularJS, RWD tables with Bootstrap CSS.
 
 
-
+# Update version: v1.3 05/06/2016
+- Improving Refactor to follow Jhon's Papa best practices
+- Implementing 'Control As' pattern
+- Improving CSS on table
+- Event delegation on columns
+- Toggle sorting on columns
+- 
 # Update version: v1.2 17/04/2015
 - Refactor to follow Jhon's Papa best practices
 - Including LINK to DEMO
+- 
 # Update version: v1.1 02/10/2014
-I'm including:
 - filter and sort options now.
 
 # What I'm using:
