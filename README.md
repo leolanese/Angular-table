@@ -15,7 +15,7 @@ You can kick-start your 'table' module with using AngularJS, RWD tables with Boo
 # Update version: v1.2 17/04/2015
 - Refactor to follow Jhon's Papa best practices
 - Including LINK to DEMO
-- 
+
 # Update version: v1.1 02/10/2014
 - filter and sort options now.
 
