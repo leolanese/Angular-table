@@ -8,10 +8,8 @@
 
     /* @ngInject */
     CustomersController.$inject = [
-      'dialogService'
-    ];
-
-    CustomersController.$inject = ['$scope'];
+		'$scope'
+	];
 
     function CustomersController(e) {
 
@@ -19,102 +17,128 @@
         vm.sortBy = 'name';
         vm.reverse = false;
         vm.caretDown = "caret-down";
+		vm.id = "";
+
+		// MOVE THIS TO A SERVICE
+		vm.lastSelection = ''; // vm.lastSelection =  customerService.lastSelection;
 
         ////
 
-        vm.doSort = function(propName) {
-          vm.caretDown = !vm.caretDown;
+		vm.turnOff = function(id){
+		  // turn of the first  line
+		  vm.off = 'off';
+		  return '';
+		};
 
-          vm.sortBy = propName;
-          vm.reverse = !vm.reverse;
-        };
+		vm.firstClassHighligth = function(cust, index, n){
+		if(index == 0){
+		  return true;
+		}
+		return '';
+		};
 
-        vm.branch = function(){
-          vm.branchClass=!vm.branchClass;
-        };
+		vm.setSelected = function(id) {
+			vm.id = id;
 
-        vm.price = function(){
-          vm.priceClass=!vm.priceClass;
-        };
+			console.log(id);
 
-        vm.model = function(){
-          vm.modelClass=!vm.modelClass;
-        };
+			// SAVE THE FIRST(latest) SELECTED on Service
+			vm.lastSelection = vm.lastSelection || id;
+		};
 
-        vm.country = function(){
-          vm.countryClass=!vm.countryClass;
-        };
+		vm.doColumnSort = function(propName) {
+		  vm.caretDown = !vm.caretDown;
+
+		  vm.sortBy = propName;
+		  vm.reverse = !vm.reverse;
+		};
+
+		vm.branch = function(){
+		  vm.branchClass=!vm.branchClass;
+		};
+
+		vm.price = function(){
+		  vm.priceClass=!vm.priceClass;
+		};
+
+		vm.model = function(){
+		  vm.modelClass=!vm.modelClass;
+		};
+
+		vm.country = function(){
+		  vm.countryClass=!vm.countryClass;
+		};
 
 
-       vm.caret = function(e){
-         vm.index=!vm.index;
-         //event delegated
-         if (e === "branch" || vm.branchClass){
-           vm.branch();
-         }
-         if (e === "price" || vm.priceClass){
-           vm.price();
-         }
-         if (e === "model" || vm.modelClass){
-           vm.model();
-         }
+		vm.caret = function(e){
+		 vm.index=!vm.index;
+		 //event delegated
+		 if (e === "branch" || vm.branchClass){
+		   vm.branch();
+		 }
+		 if (e === "price" || vm.priceClass){
+		   vm.price();
+		 }
+		 if (e === "model" || vm.modelClass){
+		   vm.model();
+		 }
 
-         if (e === "country" || vm.countryClass){
-           vm.country();
-         }
+		 if (e === "country" || vm.countryClass){
+		   vm.country();
+		 }
 
-       };
+		};
 
-        vm.customers= [
-          {
-            country: 'Germany',
-            branch: 'Audi',
-            model: 'Avanti',
-            price: '1'
-          },
-          {
-            country: 'Italy',
-            branch: 'Fiat',
-            model: '600',
-            price: '2'
-          },
-          {
-            country: 'France',
-            branch: 'Peugeout',
-            model: '450',
-            price: '3'
-          },
-          {
-            country: 'Italy',
-            branch: 'Ferrari',
-            model: 'Testarossa',
-            price: '4'
-          },
-          {
-            country: 'Germany',
-            branch: 'Mercedes',
-            model: 'M3',
-            price: '5'
-          },
-          {
-            country: 'Germany',
-            branch: 'Audi',
-            model: 'A3',
-            price: '6'
-          },
-          {
-            country: 'India',
-            branch: 'Terrafugia',
-            model: 'TF-X',
-            price: '7'
-          },
-          {
-            country: 'England',
-            branch: 'Volvo',
-            model: 'X3',
-            price: '8'
-          }];
+		vm.customers= [
+			{
+				country: 'Germany',
+				branch: 'Audi',
+				model: 'Avanti',
+				price: '1'
+			},
+			{
+				country: 'Italy',
+				branch: 'Fiat',
+				model: '600',
+				price: '2'
+			},
+			{
+				country: 'France',
+				branch: 'Peugeout',
+				model: '450',
+				price: '3'
+			},
+			{
+				country: 'Italy',
+				branch: 'Ferrari',
+				model: 'Testarossa',
+				price: '4'
+			},
+			{
+				country: 'Germany',
+				branch: 'Mercedes',
+				model: 'M3',
+				price: '5'
+			},
+			{
+				country: 'Germany',
+				branch: 'Audi',
+				model: 'A3',
+				price: '6'
+			},
+			{
+				country: 'India',
+				branch: 'Terrafugia',
+				model: 'TF-X',
+				price: '7'
+			},
+			{
+				country: 'England',
+				branch: 'Volvo',
+				model: 'X3',
+				price: '8'
+			}];
 
-    }
+	}
 
 })();
