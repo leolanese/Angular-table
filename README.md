@@ -19,6 +19,9 @@ You can kick-start your 'table' module with using AngularJS, RWD tables with Boo
 # Update version: v1.1 02/10/2014
 - filter and sort options now.
 
+# First version: v1.0.0 01/10/2014
+- Implemented HTML, pattern and logic.
+
 # What I'm using:
 -Using AngularJS (1.2.0), RWD tables tricks from css-tricks.com, bootstrap CSS (3.2.0).</br>
 -Borrowed the idea from: <a href="https://github.com/kshoufer/angularjstable">angularjstable</a>
