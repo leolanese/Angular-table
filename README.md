@@ -2,7 +2,7 @@
 This is a simple Responsive Web Boilerplate table using AngularJS and a JSON Object (hardcoded on the Controller).
 You can kick-start your 'table' module with using AngularJS, RWD tables with Bootstrap CSS.
 
-# Update version: v1.3 07/06/2016
+# Update version: v1.4 07/06/2016
 - Hability to select a row dynamicly, and the previous selected will be un-selected
 
 # Update version: v1.3 05/06/2016
