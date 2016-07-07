@@ -85,8 +85,9 @@ and (max-device-width : 480px) {
     background-color: #72caff;
 }
 
+
 .in {
-    background: #3085ff;
+    background: #aeff00;
 }
 .in:after {
     content: '\f0d7';
@@ -95,3 +96,12 @@ and (max-device-width : 480px) {
     float: right;
 }
 
+.firstLineHighligth{
+    background-color: #aeff00;
+}
+.off {
+    background-color: #fff ;
+}
+.selected {
+    background-color: red;
+}
