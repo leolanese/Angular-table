@@ -68,21 +68,15 @@ lsof -Pi | grep LISTEN
 kill -9 18740
 ```
 
---
+---
+### :100: <i>Thanks!</i>
 
-## { 'L e o   L a n e s e',
-### 'I  B u i l d   I n s p i r i n g   R e s p o n s i v e   S o l u t i o n s',
-### 'L O N D O N ,  U K' }
+> { I'm `Leo Lanese`,<br>
+   'Building Inspiring Responsive `Reactive Solutions`',<br>
+   '`London, UK`' }<br>
 
-
-# My Portfolio<br>
-<a href="http://www.leolanese.com" target="_blank">http://www.leolanese.com</a><br>
-
-# My Blog:<br>
-<a href="http://www.leolanese.com/blog" target="_blank">www.leolanese.com/blog</a><br>
-
-# Twitter:<br>
-<a href="http://twitter.com/LeoLaneseltd" target="_blank">http://twitter.com/LeoLaneseltd</a><br>
-
-# Questions / Suggestion / Recommendation ?<br>
-<a href="mail:to">angularjs@leolanese.com</a><br>
+##### :radio_button: Twitter: <a href="https://twitter.com/LeoLaneseltd" target="_blank">@LeoLaneseltd</a>
+##### :radio_button: Portfolio: <a href="https://www.leolanese.com" target="_blank">www.leolanese.com</a>
+##### :radio_button: DEV.to: <a href="https://www.dev.to/leolanese" target="_blank">dev.to/leolanese</a>
+##### :radio_button: Blog: <a href="https://www.leolanese.com/blog" target="_blank">leolanese.com/blog</a>
+##### :radio_button: Questions / Suggestion / Recommendation: developer@leolanese.com
